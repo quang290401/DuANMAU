@@ -6,6 +6,7 @@ package service;
 
 import domainModels.HoaDon;
 import java.util.ArrayList;
+import java.util.Date;
 import repository.HoaDonRepository;
 import viewModels.HoaDonViewModel;
 
@@ -40,6 +41,16 @@ public class HoaDonService implements IHoaDon{
           hoaDonViewModels.add(view);
       }
       return hoaDonViewModels;
+    }
+
+    @Override
+    public void deleteHD(String id) {
+       hoaDonRipository.deleteHoaDon(id);
+    }
+
+    @Override
+    public void UpdateHD(String ma, Date ngTao, Date ngThanhToan, Date ngShip, Date ngNhan, int tinhTrang, String tenNgNhan, String diaChi, String Sdt, String id) {
+        hoaDonRipository.UpdateHD(ma, ngTao, ngThanhToan, ngShip, ngNhan, tinhTrang, tenNgNhan, diaChi, Sdt, id);
     }
     
 }

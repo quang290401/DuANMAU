@@ -54,9 +54,9 @@ public class ChucVuRepository {
             cone = ConnectionSQL.GetConnetion();
             stm = cone.prepareStatement(sql);
             UUID id = UUID.randomUUID();
-            stm.setString(1, id.toString());
-            stm.setString(2, chucVu.getMa());
-            stm.setString(3, chucVu.getHoTen());
+            stm.setObject(1, id.toString());
+            stm.setObject(2, chucVu.getMa());
+            stm.setObject(3, chucVu.getHoTen());
             stm.execute();
         } catch (SQLException ex) {
             ex.printStackTrace();

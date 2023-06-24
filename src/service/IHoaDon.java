@@ -6,6 +6,7 @@ package service;
 
 import domainModels.HoaDon;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
@@ -14,4 +15,6 @@ import java.util.ArrayList;
 public interface IHoaDon {
     public void InsertHoaDon(HoaDon hoaDon);
     public ArrayList SelectHD();
+    public void deleteHD(String id);
+     public void UpdateHD(String ma,Date ngTao,Date ngThanhToan,Date ngShip,Date ngNhan,int tinhTrang,String tenNgNhan,String diaChi,String Sdt,String id);
 }

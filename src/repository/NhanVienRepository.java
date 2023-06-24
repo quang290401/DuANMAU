@@ -12,6 +12,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.UUID;
+import javax.swing.DefaultComboBoxModel;
 
 /**
  *
@@ -146,3 +147,17 @@ public class NhanVienRepository {
         }
     }
 }
+// private void loadDanhMuc() {
+//        DefaultComboBoxModel model = (DefaultComboBoxModel) CbbIdCh.getModel();
+//        // xoa du lieu cu
+//        model.removeAllElements();
+//        model.addElement(null);
+//        // đỗ dưc liệu mới vào
+//        ArrayList<CuaHangViewModel> cuaHangs = ch.SelectCH();
+//        model.addAll(cuaHangs);
+//
+//        CbbIdCh.setModel(model);
+//
+//        // cấu hình chuyên ngành mặc định
+//        CbbIdCh.setSelectedIndex(0);
+//    }

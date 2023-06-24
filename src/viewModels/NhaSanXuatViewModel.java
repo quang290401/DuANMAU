@@ -45,5 +45,6 @@ public class NhaSanXuatViewModel {
     public void setTen(String ten) {
         this.ten = ten;
     }
+ 
     
 }
